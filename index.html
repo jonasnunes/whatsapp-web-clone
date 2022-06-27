@@ -29,9 +29,9 @@
             <header class="toolbar-container">
                 <img class="user-photo" src="img/avatar1.png" alt="avatar">
                 <nav class="aux-icons">
-                    <i class="fas fa-spinner"></i>
-                    <i class="fas fa-comment-alt"></i>
-                    <i class="fas fa-ellipsis-v"></i>
+                    <a href="#"><i class="fas fa-spinner"></i></a>
+                    <a href="#"><i class="fas fa-comment-alt"></i></a>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
                 </nav>
                 <section class="notification-container">
                     <i class="fas fa-bell-slash"></i>
@@ -80,7 +80,35 @@
         </aside>
 
         <main class="chat-container">
-
+            <header class="chat-header">
+                <img class="user-photo" src="img/avatar2.png" alt="avatar">
+                <p class="user-name">Sabrina Matos</p>
+                <nav class="chat-navbar">
+                    <ul class="chat-tools-container">
+                        <li>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-paperclip"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="messages-container">
+                <div class="bg-image"></div>
+                <div class="chat-messages">
+                    <p class="guest-message">Olá, bom dia!</p>
+                    <p class="user-message">Oi, tudo bem?</p>
+                </div>
+                <div class="send-message-container">
+                    <a href="#"><i class="far fa-grin"></i></a>
+                    <input type="text" name="message" id="chat-message" class="userinput" placeholder="Digite uma mensagem">
+                    <a href="#"><i class="fas fa-microphone"></i></a>
+                </div>
+            </section>
         </main>
 
     </div>
