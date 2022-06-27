@@ -10,5 +10,76 @@
 
 body
     width: 100vw
-    height: 100vh
     font-family: variables.$font
+
+.user-photo
+    width: 40px
+    border-radius: 50%
+    position: absolute
+    left: 15px
+    top: 10px
+    background-color: variables.$bg-color
+
+// ícones do font awesome
+.fas.fa-bell-slash
+    width: 2.81rem
+    height: 2.81rem
+    text-align: center
+    line-height: 2.81rem
+    border-radius: 50%
+    font-size: 1.125rem
+    color: variables.$color-fa-bell-slash
+    background-color: variables.$bg-fa-bell-slash
+    position: absolute
+    top: 1.25rem
+    left: 1rem
+
+#container
+    height: 100vh
+    position: relative
+
+    .sidebar
+        width: 410px
+        height: 100%
+        display: inline-block
+        position: relative
+
+        .toolbar-container
+            width: 100%
+            height: 3.75rem
+            background-color: variables.$bg-toolbar-container
+
+            .aux-icons
+                display: flex
+                justify-content: flex-end
+                height: 3.75rem
+                line-height: 3.75rem
+                padding-right: 1.25rem
+
+                i
+                    color: variables.$color-toolbar-container
+                    font-size: 1.25rem
+                    margin-inline: 1rem
+                    transition: .5s
+                
+                i:hover
+                    color: #00000096
+        
+            .notification-container
+                width: 100%
+                height: 5.625rem
+                padding-top: 1.43rem
+                padding-left: 5rem
+                background-color: variables.$bg-notification-container
+                color: variables.$color-notification-container
+                position: relative
+
+                .receive-notifications
+                    font-size: 1rem
+                    margin-bottom: 3px
+
+                .activate-notifications
+                    font-size: 0.82rem
+
+                    i
+                        cursor: pointer
