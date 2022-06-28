@@ -210,5 +210,90 @@ body {
 .chat-container .chat-header .chat-navbar .chat-tools-container li i:hover {
   color: rgba(0, 0, 0, 0.5882352941);
 }
+.chat-container .messages-container {
+  background-color: #e1dad2;
+  height: calc(100% - 120px);
+  position: relative;
+}
+.chat-container .messages-container .bg-image {
+  background-image: url("../img/background_whats.png");
+  background-repeat: repeat;
+  opacity: 0.06;
+  width: 100%;
+  height: 100%;
+}
+.chat-container .messages-container .chat-messages {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.875rem 5rem;
+}
+.chat-container .messages-container .chat-messages p {
+  color: #262626;
+  font-size: 0.875rem;
+  padding: 7px;
+  border-radius: 7px;
+  position: relative;
+  width: 200px;
+}
+.chat-container .messages-container .chat-messages .guest-message {
+  background-color: #fff;
+}
+.chat-container .messages-container .chat-messages .guest-message:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 17px solid transparent;
+  border-right: 17px solid #fff;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+.chat-container .messages-container .chat-messages .user-message {
+  background-color: #DCF8C6;
+  float: right;
+}
+.chat-container .messages-container .chat-messages .user-message:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-left: 17px solid #DCF8C6;
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+}
+.chat-container .messages-container .send-message-container {
+  background-color: #EFEFEF;
+  border: 1px solid #ddd;
+  height: 3.75rem;
+  padding-inline: 1.75rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.chat-container .messages-container .send-message-container #chat-message {
+  position: absolute;
+  top: 0.625rem;
+  left: 3.75rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  padding-left: 1.25rem;
+  font-size: 1rem;
+  width: 88%;
+}
+.chat-container .messages-container .send-message-container i {
+  font-size: 1.5rem;
+  color: #80868A;
+  cursor: pointer;
+  transition: 0.5s;
+  height: 3.75rem;
+  line-height: 3.75rem;
+}
+.chat-container .messages-container .send-message-container i:hover {
+  color: rgba(0, 0, 0, 0.5882352941);
+}
 
 /*# sourceMappingURL=index.css.map */
