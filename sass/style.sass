@@ -38,6 +38,7 @@ body
     height: 100vh
     position: relative
 
+    // INÍCIO da estilização da barra lateral
     .sidebar
         width: 410px
         height: 100%
@@ -174,3 +175,41 @@ body
                 // retirando o hover do primeiro chat
                 .active-chat.contact-box:hover
                     background-color: variables.$active-chat
+
+    // FIM da estilização da barra lateral
+
+// INÍCIO da estilização da área de chat
+.chat-container
+    position: absolute
+    top: 0
+    left: 410px
+    width: calc( 100% - 410px )
+    height: 100%
+    background-color: variables.$bg-color
+
+    .chat-header
+        height: 3.75rem
+        background-color: variables.$bg-toolbar-container
+        border-left: 1px solid #ddd
+        padding-left: 4.68rem
+
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .user-name
+            font-size: 1rem
+        
+        .chat-navbar .chat-tools-container
+            display: flex
+            gap: 1.5rem
+            padding-right: 2rem
+
+            li i
+                font-size: 1.25rem
+                color: variables.$color-toolbar-container
+                cursor: pointer
+                transition: .5s
+            
+            li i:hover
+                color: #00000096

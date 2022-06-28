@@ -176,4 +176,39 @@ body {
   background-color: #E9EBEB;
 }
 
+.chat-container {
+  position: absolute;
+  top: 0;
+  left: 410px;
+  width: calc(100% - 410px);
+  height: 100%;
+  background-color: #ccc;
+}
+.chat-container .chat-header {
+  height: 3.75rem;
+  background-color: #eee;
+  border-left: 1px solid #ddd;
+  padding-left: 4.68rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat-container .chat-header .user-name {
+  font-size: 1rem;
+}
+.chat-container .chat-header .chat-navbar .chat-tools-container {
+  display: flex;
+  gap: 1.5rem;
+  padding-right: 2rem;
+}
+.chat-container .chat-header .chat-navbar .chat-tools-container li i {
+  font-size: 1.25rem;
+  color: #80868A;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.chat-container .chat-header .chat-navbar .chat-tools-container li i:hover {
+  color: rgba(0, 0, 0, 0.5882352941);
+}
+
 /*# sourceMappingURL=index.css.map */
