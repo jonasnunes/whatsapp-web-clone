@@ -83,3 +83,94 @@ body
 
                     i
                         cursor: pointer
+            
+            .search-container
+                height: 3rem
+                width: 100%
+                padding: 0.468rem 0 0 0.468rem
+                background-color: variables.$bg-search-container
+                position: relative
+                color: variables.$color-search-container
+
+                #contact-search
+                    position: absolute
+                    left: 1.875rem
+                    top: 1.125rem
+                    font-size: 0.875rem
+                
+                #search
+                    height: 2.18rem
+                    width: 24.06rem
+                    padding-left: 3.75rem
+                    border-radius: 1.1rem
+                
+                #search::placeholder
+                    color: variables.$color-search-container
+
+            .contacts-container
+                height: auto
+                
+                .contact-box
+                    cursor: pointer
+                    height: 4.5rem
+                    border-top: 1px solid variables.$border-contact-box
+                    position: relative
+
+                    .user-photo
+                        width: 3.125rem
+                    
+                    .user-info
+                        margin-left: 5rem
+                        padding-top: 0.625rem
+                        display: inline-block
+
+                        .user-name
+                            font-size: 1rem
+                            margin-bottom: 0.75rem
+                        
+                        .user-message-preview
+                            font-size: 0.875rem
+                            color: variables.$color-message-preview
+
+                            .fa-check-double
+                                margin-right: 5px
+                                color: variables.$color-fa-check-double
+                    
+                    .message-info
+                        position: absolute
+                        top: 0.75rem
+                        right: 1.25rem
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        gap: .2rem
+
+                        .message-time
+                            font-size: 0.75rem
+                            margin-bottom: 5px
+                            color: #ccc
+                        
+                        .message-pending
+                            background-color: variables.$bg-message-pending
+                            border-radius: 50%
+                            width: 20px
+                            height: 20px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            font-size: 0.75rem
+                            font-weight: bold
+                            color: #fff
+                
+                .contact-box:last-child
+                    border-bottom: 1px solid variables.$border-contact-box
+                
+                .contact-box:hover
+                    background-color: variables.$contact-box-hover
+                
+                .active-chat
+                    background-color: variables.$active-chat
+                
+                // retirando o hover do primeiro chat
+                .active-chat.contact-box:hover
+                    background-color: variables.$active-chat

@@ -85,5 +85,95 @@ body {
 #container .sidebar .toolbar-container .notification-container .activate-notifications i {
   cursor: pointer;
 }
+#container .sidebar .toolbar-container .search-container {
+  height: 3rem;
+  width: 100%;
+  padding: 0.468rem 0 0 0.468rem;
+  background-color: #F8F8F8;
+  position: relative;
+  color: #BDC1C3;
+}
+#container .sidebar .toolbar-container .search-container #contact-search {
+  position: absolute;
+  left: 1.875rem;
+  top: 1.125rem;
+  font-size: 0.875rem;
+}
+#container .sidebar .toolbar-container .search-container #search {
+  height: 2.18rem;
+  width: 24.06rem;
+  padding-left: 3.75rem;
+  border-radius: 1.1rem;
+}
+#container .sidebar .toolbar-container .search-container #search::placeholder {
+  color: #BDC1C3;
+}
+#container .sidebar .toolbar-container .contacts-container {
+  height: auto;
+}
+#container .sidebar .toolbar-container .contacts-container .contact-box {
+  cursor: pointer;
+  height: 4.5rem;
+  border-top: 1px solid #f2f2f2;
+  position: relative;
+}
+#container .sidebar .toolbar-container .contacts-container .contact-box .user-photo {
+  width: 3.125rem;
+}
+#container .sidebar .toolbar-container .contacts-container .contact-box .user-info {
+  margin-left: 5rem;
+  padding-top: 0.625rem;
+  display: inline-block;
+}
+#container .sidebar .toolbar-container .contacts-container .contact-box .user-info .user-name {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+#container .sidebar .toolbar-container .contacts-container .contact-box .user-info .user-message-preview {
+  font-size: 0.875rem;
+  color: #454545;
+}
+#container .sidebar .toolbar-container .contacts-container .contact-box .user-info .user-message-preview .fa-check-double {
+  margin-right: 5px;
+  color: #4FC3F7;
+}
+#container .sidebar .toolbar-container .contacts-container .contact-box .message-info {
+  position: absolute;
+  top: 0.75rem;
+  right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+#container .sidebar .toolbar-container .contacts-container .contact-box .message-info .message-time {
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+#container .sidebar .toolbar-container .contacts-container .contact-box .message-info .message-pending {
+  background-color: #09d261;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+}
+#container .sidebar .toolbar-container .contacts-container .contact-box:last-child {
+  border-bottom: 1px solid #f2f2f2;
+}
+#container .sidebar .toolbar-container .contacts-container .contact-box:hover {
+  background-color: #f4f5f5;
+}
+#container .sidebar .toolbar-container .contacts-container .active-chat {
+  background-color: #E9EBEB;
+}
+#container .sidebar .toolbar-container .contacts-container .active-chat.contact-box:hover {
+  background-color: #E9EBEB;
+}
 
 /*# sourceMappingURL=index.css.map */
